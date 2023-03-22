@@ -11,6 +11,10 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -
 [Peer]
 PublicKey = x4I5ZPyf9m0Pv7RduMCDBs6Amfleat1S3DcNmLOX8lc=
 AllowedIPs = 10.0.0.2/32
+
+[Peer]
+PublicKey = PHjiSlEEkz/yeHB/g7YjQjDRMRcTYaFDg8oflH5cdhA=
+AllowedIPs = 10.0.0.3/32
 EOF
 
 wg-quick up wg0
